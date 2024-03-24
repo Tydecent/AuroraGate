@@ -1,0 +1,12 @@
+E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0.1.vbproj.AssemblyReference.cache
+E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0._1.Form1.resources
+E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0._1.Resources.resources
+E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0.1.vbproj.GenerateResource.cache
+E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0.1.vbproj.CoreCompileInputs.cache
+E:\project\AuroraGate\AuroraGate_v0.1\bin\Debug\AuroraGate_v0.1.exe.config
+E:\project\AuroraGate\AuroraGate_v0.1\bin\Debug\AuroraGate_v0.1.exe
+E:\project\AuroraGate\AuroraGate_v0.1\bin\Debug\AuroraGate_v0.1.pdb
+E:\project\AuroraGate\AuroraGate_v0.1\bin\Debug\AuroraGate_v0.1.xml
+E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0.1.exe
+E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0.1.xml
+E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0.1.pdb
