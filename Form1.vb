@@ -159,5 +159,12 @@ Public Class Form1
 
 
 
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
 
+        Form2.Show()
+    End Sub
+
+    Private Sub RadioButton_Yahoo_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton_Yahoo.CheckedChanged
+
+    End Sub
 End Class

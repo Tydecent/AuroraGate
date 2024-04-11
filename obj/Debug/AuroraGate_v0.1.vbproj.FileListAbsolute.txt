@@ -10,3 +10,4 @@ E:\project\AuroraGate\AuroraGate_v0.1\bin\Debug\AuroraGate_v0.1.xml
 E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0.1.exe
 E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0.1.xml
 E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0.1.pdb
+E:\project\AuroraGate\AuroraGate_v0.1\obj\Debug\AuroraGate_v0._1.Form2.resources

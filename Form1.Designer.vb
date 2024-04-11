@@ -22,6 +22,7 @@ Partial Class Form1
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
@@ -29,6 +30,7 @@ Partial Class Form1
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RadioButton_GooGle = New System.Windows.Forms.RadioButton()
@@ -38,17 +40,17 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.StatusStrip1.SuspendLayout()
+        Me.ToolStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(159, 25)
+        Me.TextBox1.Location = New System.Drawing.Point(159, 26)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(723, 23)
         Me.TextBox1.TabIndex = 0
@@ -95,11 +97,21 @@ Partial Class Form1
         '
         'ToolStrip1
         '
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1031, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1031, 26)
         Me.ToolStrip1.TabIndex = 4
         Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(39, 23)
+        Me.ToolStripButton1.Text = "关于"
         '
         'GroupBox1
         '
@@ -107,6 +119,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.RadioButton_Yahoo)
         Me.GroupBox1.Controls.Add(Me.RadioButton_bing)
         Me.GroupBox1.Controls.Add(Me.RadioButton_baidu)
+        Me.GroupBox1.Controls.Add(Me.MenuStrip1)
         Me.GroupBox1.Location = New System.Drawing.Point(888, 67)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(131, 69)
@@ -130,9 +143,9 @@ Partial Class Form1
         Me.RadioButton_Yahoo.Enabled = False
         Me.RadioButton_Yahoo.Location = New System.Drawing.Point(64, 21)
         Me.RadioButton_Yahoo.Name = "RadioButton_Yahoo"
-        Me.RadioButton_Yahoo.Size = New System.Drawing.Size(53, 16)
+        Me.RadioButton_Yahoo.Size = New System.Drawing.Size(47, 16)
         Me.RadioButton_Yahoo.TabIndex = 2
-        Me.RadioButton_Yahoo.Text = "Yahoo"
+        Me.RadioButton_Yahoo.Text = "搜狗"
         Me.RadioButton_Yahoo.UseVisualStyleBackColor = True
         '
         'RadioButton_bing
@@ -184,20 +197,6 @@ Partial Class Form1
         Me.Button4.Text = "主页"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'TrackBar1
-        '
-        Me.TrackBar1.Enabled = False
-        Me.TrackBar1.Location = New System.Drawing.Point(895, 512)
-        Me.TrackBar1.Maximum = 500
-        Me.TrackBar1.Minimum = 25
-        Me.TrackBar1.Name = "TrackBar1"
-        Me.TrackBar1.Size = New System.Drawing.Size(116, 45)
-        Me.TrackBar1.SmallChange = 25
-        Me.TrackBar1.TabIndex = 9
-        Me.TrackBar1.TickFrequency = 50
-        Me.TrackBar1.TickStyle = System.Windows.Forms.TickStyle.Both
-        Me.TrackBar1.Value = 100
-        '
         'TextBox2
         '
         Me.TextBox2.Enabled = False
@@ -208,13 +207,21 @@ Partial Class Form1
         Me.TextBox2.TabIndex = 10
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Location = New System.Drawing.Point(3, 17)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(125, 24)
+        Me.MenuStrip1.TabIndex = 4
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1031, 593)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TrackBar1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -224,13 +231,18 @@ Partial Class Form1
         Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "AuroraGate"
+        Me.TopMost = True
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -252,6 +264,7 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents TrackBar1 As TrackBar
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents MenuStrip1 As MenuStrip
 End Class
