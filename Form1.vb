@@ -10,17 +10,38 @@ Public Class Form1
         If Uri.TryCreate(uriText, UriKind.Absolute, uriResult) Then
             WebBrowser1.Url = uriResult
             ToolStripStatusLabel1.Text = "加载完成"
+
         ElseIf RadioButton_baidu.Checked Then
             ' 若文本框内的文本不是有效URL,则在选定的搜索引擎搜索
             WebBrowser1.Url = New Uri("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=" + uriText + "&fenlei=256&oq=1122%2526lt%253B%2526lt%253B&rsv_pq=a17d8dae00004aa2&rsv_t=4848i9zGQhOak0CA7X0%2BqI9SLLfjIq7hmNmhqov2MNGy4PqZo6Ip0IEIhNA&rqlang=cn&rsv_enter=0&rsv_dl=tb&rsv_btype=t&prefixsug=1122%2526lt%253B%2526lt%253B&rsp=5")
             ToolStripStatusLabel1.Text = "加载完成"
+
         ElseIf RadioButton_bing.Checked Then
             WebBrowser1.Url = New Uri("http://cn.bing.com/search?q=" + uriText + "&go=&form=QBLH&qs=n&sk=")
             ToolStripStatusLabel1.Text = "加载完成"
+
         ElseIf RadioButton_GooGle.Checked Then
             WebBrowser1.Url = New Uri("https://www.google.com/search?q=" + uriText)
             ToolStripStatusLabel1.Text = "加载完成"
+
+        ElseIf RadioButton_Sogou.Checked Then
+            WebBrowser1.Url = New Uri("https://www.sogou.com/web?query=" + uriText)
+            ToolStripStatusLabel1.Text = "加载完成"
+
+        ElseIf RadioButton_zhihu.Checked Then
+            WebBrowser1.Url = New Uri("https://www.zhihu.com/search?type=content&q=" + uriText)
+            ToolStripStatusLabel1.Text = "加载完成"
+
+        ElseIf RadioButton_bilibili.Checked Then
+            WebBrowser1.Url = New Uri("https://search.bilibili.com/all?keyword=" + uriText)
+            ToolStripStatusLabel1.Text = "加载完成"
+
+        ElseIf RadioButton_weibo.Checked Then
+            WebBrowser1.Url = New Uri("https://s.weibo.com/weibo?q=" + uriText)
+            ToolStripStatusLabel1.Text = "加载完成"
         End If
+
+
         If Not IsNothing(WebBrowser1.Url) Then
             Dim myUri As Uri = WebBrowser1.Url
             Dim myUriAsString As String = myUri.ToString()
@@ -157,14 +178,23 @@ Public Class Form1
 
     End Sub
 
-
-
-    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
-
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs)
         Form2.Show()
     End Sub
 
-    Private Sub RadioButton_Yahoo_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton_Yahoo.CheckedChanged
+    Private Sub 报告新问题ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 报告新问题ToolStripMenuItem.Click
+        Process.Start("https://github.com/Tydecent/AuroraGate/issues/new")
+    End Sub
 
+    Private Sub 查看问题列表ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 查看问题列表ToolStripMenuItem.Click
+        Process.Start("https://github.com/Tydecent/AuroraGate/issues")
+    End Sub
+
+    Private Sub 关于与鸣谢ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 关于与鸣谢ToolStripMenuItem.Click
+        Form2.Show()
+    End Sub
+
+    Private Sub 发行说明ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles 发行说明ToolStripMenuItem1.Click
+        Process.Start("https://github.com/Tydecent/AuroraGate/releases/tag/v0.1.1-vb")
     End Sub
 End Class
